@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} /* removes bullet points from list */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #5977C8;
+	 position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #5977C8;
+}
+
+li:last-child {
+  border-bottom: none;
+} /* adds a border and aligns text to centre */
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #5977C8;
+} /* creates horizontal nav bar */
+.active {
+  background-color: #04AA6D;
+}
+li {
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+div {
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+p  {
+	font-family: enriqueta;
+	font-size: 14;
+	font-style: normal;
+	font-display: auto;
+}
+h1  {
+	font-size: 16;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-kerning: normal;
+}
+.nav {
+	padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+}
+.list {
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+	color:black;
+	display:list-item;
+}
+a {
+  color:red;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Implementation</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+		<div class="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="investigation.html">Investigation and Plan</a></li>
+			<li><a href="design.html">Design</a></li>
+			<li><a href="implementation.html">Implementation and Testing</a></li>
+			<li><a href="evaluation.html">Evaluation</a></li>
+			<li><a href="references.html">References</a></li>
+			<li><a href="summary.html">Summary + Word Count</a></li>
+		</ul>
+	</div>
+	<div>
+		<h1>Implementation and Testing (approximately 1000 words)</h1>
+		<hr>
+		<br/>
+		<p>I began my testing my acquiring the following sensors: </p>
+		<br/>
+			<ol>
+			<li class="list">DHT11</li>
+			<li class="list">Breadboard</li>
+			<li class="list">edge connector</li>
+			</ol>
+		<br>
+		<p>the functions used to on the microbit came from<b><a href="https://makecode.microbit.org">from https://makecode.microbit.org</b></a></p>
+		<p>10/02/22, i created a flowchart for what the embedded system had to do</p>
+		<p>15/02/22, i started testing the project i had to test the embedded system and DHT11 sensor to see if it works, i did this by writing out a demo code to display if the room was hot or cold on the embedded system when the DHT11 detects the temperature and humidity instead of displaying the current temperature and humidity, in this code i had a variable called sensor, this variable was the information that the embedded system need so that it could determine whether it was hot or cold, i had the embedded system just to display whether is was hot or cold, i had 3 wires, one was connecting from the gnd to the negative pin on the DHT11 sensor, the second one was connecting from 3v to the data pin on the DHT11 sensor, and the last one was connecting from the 0 to the positive pin on the DHT11 sensor, the DHT11 sensor had three outcomes it would either give the information that the embedded system needed, the embedded system will be given code that will be like if sensor is more than temperaturethen display hot, temperature is a non-hardcoded variable which is the temperature that the user likes the temperature to be at and this variable had a max and min integers, and the other two outcomes is that the sensor variable is in between the temperature then display "just right" and the sensor variable is lower the the temperature then it would display "cold". in this demo code i came across a lot of errors that i fixed and learnt upon, when i was connecting the embedded system wrong to the digital pin, i learn many things about the DHT11 sensor, this demo code was practical towards the project because it made it easier to understand how everything on the breadboard was working, it made me complete the project faster than many of my peers in my class, i limited the likely hood of mistakes on the actual code and the it showed me that the sensor worked.</p>
+		<p>25/02/22, for my actual project the temperature and humidity reader, my circuit layout was a bit diffrent to the test circuit to see if the sensor worked, i had my DHT11 sensor connected to row a on my breadboard, the vcc pin on the DHT11 sensor was lined up with a connector placed on row e, on the other side of the connector it was connected to 3v on the embedded system, it connected to the embedded system by an edge connector breakout, the data pin was lined up with a connector on row d of the breadboard, on the embedded system the data pin went to 0v, the GND pin was lined up with a connector on row e of the breadboard, on the embedded system the GND pin was connected to the GND pin of the microbit, on the website i made a page that went to my glitch files, this will help me connect my embedded system to the website so that i can let the user display their own live history of the temperature and humidity, the design of the circuit of my prototype was simple and neat</p>
+	  <p>01/03/22, i started writing my code for the temperature and humidity reader, on 10/02/22 i drew a flowchart for this code so before i started i already had a good understanding and best direction, my test code was like my temperature and humidity sensor code but you could see that my test code was too rushed and it had too many uncessary steps, i had everything in a forever function so that it could continuosly display the temperature and humidity, at first i made two strings called temperature and humidity but after testing i found out that it was actually too hard to read so i remade it to t and h, make code had an extension for dht11 sensors so i made that to collect the humidity and temperature from the sensor, when i tested it would display temperature in binary so in the code i made a line for it to return to human readable ascii numbers, when testing i also noticed that it was a bit hard to read because it would display the data to fast without any breaks so i made a line so the embedded system could pause for 100 ms </p>
+	<p>05/03/22, i started writing my code for the tranferring of the data to a csv file, i had to do this because the data was stored on to the embedded system and i couldn't access that data so i made a program so that the data gets transferred to the hardware connected to it and stores the data in a csv file, at first i made a program so that it collects the data and prints it, at this stage i just wanted to test for the data to see if it transferred correctly and when i checked it the data did come out but it had uncessary symbols for examples slashes, spaces, so i got rid of them and another problem was sometimes the program would just send nothing but still counted as an output, the second stage was when instead of printing it the data got transferred to a csv file, for this i changed the end part of the code so that it transfers the data to the csv file, the problem that i was running into was still happening in the second stage of the code so i had to change the code to eliminate the data with nothing in it  </p>
+	<p>15/03/22, i started to use the csv file to start graphing, for this i connect the csv file to the program and imported matplotlib to display the graph, the only problem was that the program it understand the data type so i assigned the float values as the default data types</p>
+<h2>Video</h2>
+		<p>Insert video here</p>
+		<video width="400" controls>
+  <source src="the-video.mp4" type="video/mp4">
+</video>
+		
+		
+		</div>
+		
+	</body>
+</html>
